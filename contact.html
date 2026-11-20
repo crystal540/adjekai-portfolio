@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Dr. Naa Adjekai Adjei</title>
+  <meta name="description" content="Available for consulting, advisory, and speaking work on a selective basis. Based in Sub-Saharan Africa, available for global engagements." />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- navbar — with "active" on the Contact link -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">NAA ADJEKAI ADJEI</a>
+
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="expertise.html">Expertise</a></li>
+          <li class="nav-item"><a class="nav-link" href="work.html">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="writing.html">Writing</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-4 mt-2 mt-lg-0">
+            <a class="btn btn-outline-nav" href="contact.html">Enquire About Consulting</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- ============ CONTACT INTRO ============ -->
+  <section class="about-intro">
+    <div class="container">
+      <div class="about-intro-inner">
+        <p class="section-label">How to Engage</p>
+        <h2 class="about-statement">
+          Let's discuss<br />
+          the engagement
+        </h2>
+        <p class="hero-tagline mt-4">
+          Available for consulting, advisory, and speaking work on a
+          selective basis.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ENGAGEMENT TYPES + PHOTO ============ -->
+  <section class="contact-main">
+    <div class="container">
+      <div class="row g-5">
+
+        <div class="col-lg-6">
+          <div class="about-photo contact-photo">
+            <img src="assets/img/naa.png" alt="Dr. Naa Adjekai Adjei" class="img-fluid" />
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="engage-item">
+            <span class="engage-label">01&ensp;Consulting</span>
+            <p class="engage-text">Advisory on investment frameworks, regulatory design, and development finance in the energy sector.</p>
+          </div>
+          <div class="engage-item">
+            <span class="engage-label">02&ensp;Research Collaboration</span>
+            <p class="engage-text">Institutional research partnerships within her areas of expertise.</p>
+          </div>
+          <div class="engage-item">
+            <span class="engage-label">03&ensp;Advisory</span>
+            <p class="engage-text">Ongoing advisory capacity on research projects and programme design.</p>
+          </div>
+          <div class="engage-item">
+            <span class="engage-label">04&ensp;Speaking</span>
+            <p class="engage-text">Panels, briefings, and expert roundtables on China-Africa energy investment and energy access financing.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FORM + DETAILS ============ -->
+  <section class="contact-form-section">
+    <div class="container">
+      <div class="row justify-content-end">
+        <div class="col-lg-9">
+
+          <!--
+            FORM ACTION — this is the one real change:
+            1. Sign up free at https://formspree.io with HER email address
+            2. Create a form, copy your form ID
+            3. Replace YOUR_FORM_ID below with it
+            Without this, the form does nothing — a static site has no server to send mail.
+          -->
+          <form action="https://formspree.io/f/mzeraple" method="POST">
+
+            <label class="field-label" for="name">Your Name</label>
+            <input class="contact-field" type="text" id="name" name="name" required />
+
+            <label class="field-label" for="email">Email Address</label>
+            <input class="contact-field" type="email" id="email" name="email" required />
+
+            <label class="field-label" for="message">Brief Description of the Engagement</label>
+            <textarea class="contact-field" id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn btn-outline-nav mt-4">Send Message&ensp;&rarr;</button>
+          </form>
+
+          <p class="form-note">
+            I work on a selective basis. Please include a brief description of
+            the engagement when reaching out.
+          </p>
+
+          <div class="contact-details">
+            <a href="mailto:naaadjel623@gmail.com"><i class="bi bi-envelope"></i> naaadjel623@gmail.com</a>
+            <a href="https://www.linkedin.com/in/dr-naa-adjekai-adjei-541458208/" target="_blank" rel="noopener"><i class="bi bi-link-45deg"></i> linkedin.com/in/naa</a>
+            <span><i class="bi bi-geo-alt"></i> Available for global engagements</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
