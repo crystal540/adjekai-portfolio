@@ -544,3 +544,12 @@ textarea.contact-field { resize: vertical; }
 
 .contact-details i { color: var(--accent); margin-right: 0.4rem; }
 .contact-details a:hover { color: var(--text); }
+
+/* link colours*/
+a {
+  color: var(--accent);   /* your gold, #c9a35a */
+}
+
+a:hover {
+  color: #dbb56a;         /* slightly lighter gold on hover */
+}
