@@ -382,6 +382,16 @@ body {
   padding-top: 5rem;
 }
 
+.work-teaching {
+  border-top: 1px solid #d8d4c8;
+  padding-top: 5rem;
+}
+
+.work-speaking {
+  border-top: 1px solid #d8d4c8;
+  padding-top: 5rem;
+}
+
 .work-item {
   padding: 3.5rem 0;
   border-top: 1px solid #d8d4c8;
@@ -552,4 +562,38 @@ a {
 
 a:hover {
   color: #dbb56a;         /* slightly lighter gold on hover */
+}
+
+/* ============ i button ============ */
+.credit { position: relative; }
+
+.credit-btn {
+  width: 22px; height: 22px; padding: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 1px solid currentColor; border-radius: 50%;
+  background: transparent; color: inherit;
+  font: italic 600 12px/1 Georgia, serif;
+  opacity: .7; cursor: pointer;
+  transition: opacity .2s;
+}
+.credit-btn:hover, .credit-btn[aria-expanded="true"] { opacity: 1; }
+.credit-btn:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; opacity: 1; }
+
+.credit-panel {
+  position: absolute; right: 0; bottom: calc(100% + 12px);
+  width: 260px; padding: 14px 16px; z-index: 20;
+  background: #1a1a1a; color: #e8e4da;
+  border: 1px solid rgba(255,255,255,.15); border-radius: 6px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.35);
+  font-size: 13px; line-height: 1.5; text-align: left;
+  text-transform: none; letter-spacing: normal;
+}
+.credit-panel p { margin: 0 0 6px; }
+.credit-panel p:last-child { margin-bottom: 0; }
+.credit-title { font-weight: 600; }
+.credit-sub { opacity: .75; }
+.credit-panel a { color: inherit; text-decoration: underline; }
+
+@media (max-width: 991px) {
+  .credit-panel { right: auto; left: 50%; transform: translateX(-50%); }
 }
